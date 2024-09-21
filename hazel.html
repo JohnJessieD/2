@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <style>
+        /* Global Styles */
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            color: #333;
+            background-color: #f4f4f9;
+        }
+        header {
+            background-color: #333;
+            color: white;
+            padding: 20px 10%;
+            text-align: center;
+            font-size: 24px;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            margin: 20px 0;
+        }
+        nav a {
+            text-decoration: none;
+            color: #333;
+            margin: 0 15px;
+            padding: 8px 16px;
+            border-radius: 4px;
+            background-color: #f4f4f9;
+            transition: background-color 0.3s ease, color 0.3s ease;
+        }
+        nav a:hover {
+            background-color: #333;
+            color: #fff;
+        }
+        section {
+            padding: 40px 10%;
+        }
+        .intro {
+            text-align: center;
+            margin-bottom: 50px;
+        }
+        .intro h1 {
+            font-size: 48px;
+            margin-bottom: 10px;
+        }
+        .intro p {
+            font-size: 18px;
+            color: #666;
+        }
+        .projects {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+        .project-card {
+            background-color: #fff;
+            width: 30%;
+            margin: 15px;
+            padding: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+        }
+        .project-card:hover {
+            transform: scale(1.05);
+        }
+        .project-card img {
+            width: 100%;
+            height: auto;
+            border-radius: 4px;
+        }
+        .project-card h3 {
+            font-size: 22px;
+            margin: 10px 0;
+        }
+        .project-card p {
+            font-size: 16px;
+            color: #666;
+        }
+        footer {
+            text-align: center;
+            padding: 20px 10%;
+            background-color: #333;
+            color: white;
+        }
+        footer p {
+            margin: 0;
+            font-size: 14px;
+        }
+        @media(max-width: 768px) {
+            .project-card {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>My Portfolio</h1>
+</header>
+
+<nav>
+    <a href="#about">About Me</a>
+    <a href="#projects">Projects</a>
+    <a href="#contact">Contact</a>
+</nav>
+
+<section class="intro" id="about">
+    <h1>Hello, I'm [Your Name]</h1>
+    <p>A passionate developer with a love for creating sleek, functional web applications.</p>
+</section>
+
+<section class="projects" id="projects">
+    <div class="project-card">
+        <img src="project1.jpg" alt="Project 1">
+        <h3>Project 1</h3>
+        <p>Description of your project goes here. Explain the technologies used and what you learned.</p>
+    </div>
+    <div class="project-card">
+        <img src="project2.jpg" alt="Project 2">
+        <h3>Project 2</h3>
+        <p>Details about this project. Share your process and any challenges you overcame.</p>
+    </div>
+    <div class="project-card">
+        <img src="project3.jpg" alt="Project 3">
+        <h3>Project 3</h3>
+        <p>Highlight key features, tools, and frameworks you used to build this project.</p>
+    </div>
+</section>
+
+<footer>
+    <p>&copy; 2024 [Your Name]. All rights reserved.</p>
+</footer>
+
+</body>
+</html>
